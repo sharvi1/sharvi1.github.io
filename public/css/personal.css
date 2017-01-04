@@ -17,12 +17,11 @@
 }
 
 .img-responsive
-{width:250px;
+{/*width:250px;*/
 height:260px;
 float: right;
 background:  no-repeat center center fixed;
     background-size: cover}
-
 
 
 
@@ -67,9 +66,14 @@ Fixed :)**/
 header .container {
     padding-top: 170px;
     padding-bottom: 90px;
+    
 }
 
 
+
+#fix-image{
+    margin-left: 7px;
+}
 
 }
 
@@ -128,4 +132,88 @@ header .container {
 
 
 
+.front {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top:10%;
+    left: 0%
+    background-color: black;
+   
+}
 
+
+
+.behind {
+    display: block;
+    z-index: -3;
+}
+
+
+.header-behind{
+    z-index: 3;
+    display: block;
+        position: relative;
+    top: 46ex;
+}
+
+
+
+
+.front-man {
+    display: block;
+    z-index: 5;
+    position: relative;
+   
+    top:-15ex;
+}
+
+
+
+.button-xLarge {
+    padding: 45px 45px;
+    font-size: 23px;
+    font-weight: bold;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.pink-button {
+    color: #ffffff;
+    border: #ffffff solid 3px;
+}
+
+.position-button1{
+    float:left;
+}
+.position-button3{
+    float:right;
+}
+
+
+svg{
+background: #f1f1f1
+}
+
+
+
+.artist:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+
+}
+
+
+div.tooltip {   
+    position: absolute;         
+    text-align: center;         
+    width: auto;                    
+    height: auto;                   
+    padding: 2px;               
+    font: 12px sans-serif;      
+    background: lightsteelblue; 
+    border: 0px;        
+    border-radius: 8px;         
+    pointer-events: none;           
+}
