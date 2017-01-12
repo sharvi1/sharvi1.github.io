@@ -212,7 +212,7 @@ var div = d3.select("body").append("div")
                 .style("opacity", .9);		
             div	.html("Skill: " + (d.name) + "<br/>"  + d.description)	
                 .style("left", (d3.event.pageX) + "px")		
-                .style("top", (d3.event.pageY - 28) + "px");	
+                .style("top", (d3.event.pageY - 28) + "px")	
 
 
 		})
@@ -233,7 +233,8 @@ function(d){
 		}
 */
 
-
+//ADDING ID FOR REFERENCE TO DIALOGBOX JS
+		.attr("id","skill-details")
 		.attr("fill", "lightblue")
 //15) we can still use tooltips and transitions used in d3 visualizations
 		

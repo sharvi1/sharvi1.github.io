@@ -98,7 +98,7 @@
     <div class="container front">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive animated fadeInRight" src="img/sp2.png" alt="">
+                <img class="img-personal img-responsive animated fadeInRight" src="img/sp2.png" alt="">
 
 
 
@@ -106,7 +106,7 @@
                     <span class="name">Hello!</span>
                     </br></br>
 
-                    <span class="skills">I'm Sharvil. I'm a growing database developer with a desire to learn everything.<br>And whatever I learn or make, I will document it here.</span>
+                    <span class="skills">My name is Sharvil. I love working on complex datasets.<br>I'm passionate about the field of Data Science.<br>I will be documenting my learnings and projects here</span>
 
                     <!--<div><button type = "button" class = "btn btn-primary">Interactive Resume</button>
 </div>
@@ -116,13 +116,13 @@
 
                 </div>-->
                 </br></br>
-                <div class="position-button-all">
-                <div class="position-button1">
-                <a href="resume.html" class="button-xLarge pink-button hvr-back-pulse" title="My Resume">Interactive Resume</a></div>
-                <div class="position-button2">
-                <a href="projects.html" class="button-xLarge pink-button hvr-back-pulse" title="My Projects">Personal Projects</a></div>
-                <div class="position-button3">
-                <a href="www.sharvi1.com/blogs" class="button-xLarge pink-button hvr-back-pulse" title="My Blog">Personal Blog&nbsp;</a></div>
+                <div id="position-button-all">
+                
+                <a href="resume.html" class="button-xLarge pink-button hvr-back-pulse" title="My Resume">Interactive Resume</a>
+                
+                <a href="projects.html" class="button-xLarge pink-button hvr-back-pulse" title="My Projects">Personal Projects</a>
+                
+                <a href="/blogs" class="button-xLarge pink-button hvr-back-pulse" title="My Blog">Personal Blog&nbsp;</a>
                 </div>
 <!--
                 <div>
@@ -144,32 +144,75 @@
 
 
 <section>
-<div><span>Worked With:</span></div>
-<div>Tridant</div>
-<div>Bakers Delight</div>
-<div>Datagames</div>
+
+<div class="col-lg-12 text-center">
+                    <h2>Worked With</h2>
+<hr class="star"></div>
+
+<div id="position-images-work" class="position-images">
+<div class="tridant">
+  <a href="https://www.tridant.com.au/" title="Tridant Pty Ltd"><img src="img/t.png"></a>
+</div>
+
+<div class="bd">
+  <a href="https://www.bakersdelight.com.au/" title="Bakers Delight"><img src="img/b.jpg"></a>
+</div>
+
+<div class="dg">
+  <a href="https://www.datagames.com.au/" title="Datagames"><img src="img/d.png"></a>
+</div>
+</div>
+
 </section>
     
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="port-bg-color">
+        <div class="container text-port-color">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star">
+                    <h2>Featured Projects</h2>
+                    <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#modalResume" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/ir.png" class="img-responsive2" alt="">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#modalRprogram" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/rp.jpg" class="img-responsive2" alt="">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#modalPython" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/cake.png" class="img-responsive2" alt="">
+                        </a>
+                    </div>
+                
             </div>
         </div>
     </section>
+    
 
     
 
@@ -178,11 +221,11 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <div class="footer-col col-md-4">
+                <!--<div class="footer-col col-md-4">
                     <h3>Location</h3>
                     <p> Chadstone, VIC 3148</p>
-                </div>
-                <div class="footer-col col-md-4">
+                </div>-->
+                <div class="footer-col col-md-4" style="width:100%;">
                     <h3>Around the Web</h3>
                     <ul class="list-inline">
                         
@@ -215,10 +258,10 @@
                         
                     </ul>
                 </div>
-                <div class="footer-col col-md-4">
+                <!--<div class="footer-col col-md-4">
                     <h3>About Sharvil</h3>
                     <p>Find me on <a href="https://au.linkedin.com/in/sharvilp">LinkedIn</a></p>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -241,9 +284,9 @@
 
 
     
-<div class="portfolio-modal modal fade" id="modalCabin" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="modalResume" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div  data-dismiss="modal">
             <div class="lr">
                 <div class="rl">
                 </div>
@@ -253,12 +296,15 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Cabin</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <h2>Interactive Resume</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="img/ir.png" class="img-responsive3 img-centered" alt="">
+                        <p>My very first perosnal project on this website. I’ve designed this <a href="/resume.html">Interactive Resume</a> using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun an interactive way.</p>
 
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
+<p>You can also download a <a href="https://www.dropbox.com/s/k97skaq6hr07bbw/CV%20-%20Sharvil%20Popli.docx?dl=0">PDF</a> version of my CV if you want.</p>
 
 
                         <ul class="list-inline item-details">
@@ -267,7 +313,7 @@
                                     </strong>
                             </li>
                             <li>Date:
-                                <strong>February 2016
+                                <strong>January 2017
                                     </strong>
                             </li>
                         </ul>
@@ -279,9 +325,9 @@
     </div>
 </div>
 
-<div class="portfolio-modal modal fade" id="modalCake" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="modalRprogram" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div  data-dismiss="modal">
             <div class="lr">
                 <div class="rl">
                 </div>
@@ -291,21 +337,21 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Cake</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
-
+                        <h2>Upcoming R Project</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="img/rp.jpg" class="img-responsive3 img-centered" alt="">
+                        <p>Currently pursuing MOOCs to obtain R programming skills.</p>
 
                         <ul class="list-inline item-details">
                             <li>Category:
-                                <strong>Design
+                                <strong>Analytics
                                     </strong>
                             </li>
                             <li>Date:
-                                <strong>February 2016
+                                <strong>January 2017
                                     </strong>
                             </li>
                         </ul>
@@ -317,9 +363,9 @@
     </div>
 </div>
 
-<div class="portfolio-modal modal fade" id="modalCircus" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="modalPython" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
+        <div  data-dismiss="modal">
             <div class="lr">
                 <div class="rl">
                 </div>
@@ -329,135 +375,22 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Circus</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
-
-
-                        <ul class="list-inline item-details">
-                            <li>Category:
-                                <strong>Design
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong>February 2016
-                                    </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="modalGame" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Game</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
+                        <h2>Upcoming Python Project</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="img/portfolio/cake.png" class="img-responsive3 img-centered" alt="">
+                        <p>Currently pursuing MOOCs to obtain Python programming skills.</p>
 
 
                         <ul class="list-inline item-details">
                             <li>Category:
-                                <strong>Design
+                                <strong>Analytics
                                     </strong>
                             </li>
                             <li>Date:
-                                <strong>February 2016
-                                    </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="modalSafe" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Safe</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
-
-
-                        <ul class="list-inline item-details">
-                            <li>Category:
-                                <strong>Design
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong>February 2016
-                                    </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="modalSubmarine" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Submarine</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-
-<p>In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!</p>
-
-
-                        <ul class="list-inline item-details">
-                            <li>Category:
-                                <strong>Design
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong>February 2016
+                                <strong>January 2017
                                     </strong>
                             </li>
                         </ul>
@@ -491,6 +424,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 
 <script src="public/js/bubbles.js"></script>
+<script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 
 
   </body>

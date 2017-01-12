@@ -6,20 +6,20 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Jan 2017 22:00:37 +1100</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2017 22:00:37 +1100</lastBuildDate>
+    <pubDate>Thu, 12 Jan 2017 19:45:15 +1100</pubDate>
+    <lastBuildDate>Thu, 12 Jan 2017 19:45:15 +1100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
-        <title>Cabin</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
+        <title>Interactive Resume</title>
+        <description>&lt;p&gt;My very first perosnal project on this website. I’ve designed this &lt;a href=&quot;/resume.html&quot;&gt;Interactive Resume&lt;/a&gt; using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun an interactive way.&lt;/p&gt;
 
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
+&lt;p&gt;You can also download a &lt;a href=&quot;https://www.dropbox.com/s/k97skaq6hr07bbw/CV%20-%20Sharvil%20Popli.docx?dl=0&quot;&gt;PDF&lt;/a&gt; version of my CV if you want.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 07 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/07/cabin.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/07/cabin.html</guid>
+        <pubDate>Thu, 12 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//design/2017/01/12/resume.html</link>
+        <guid isPermaLink="true">http://localhost:4000//design/2017/01/12/resume.html</guid>
         
         
         <category>Design</category>
@@ -27,82 +27,29 @@
       </item>
     
       <item>
-        <title>Cake</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
-
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
-
+        <title>Upcoming R Project</title>
+        <description>&lt;p&gt;Currently pursuing MOOCs to obtain R programming skills.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 06 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/06/cake.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/06/cake.html</guid>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//analytics/2017/01/11/rprogram.html</link>
+        <guid isPermaLink="true">http://localhost:4000//analytics/2017/01/11/rprogram.html</guid>
         
         
-        <category>Design</category>
+        <category>Analytics</category>
         
       </item>
     
       <item>
-        <title>Circus</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
-
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
+        <title>Upcoming Python Project</title>
+        <description>&lt;p&gt;Currently pursuing MOOCs to obtain Python programming skills.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 05 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/05/circus.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/05/circus.html</guid>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//analytics/2017/01/10/python.html</link>
+        <guid isPermaLink="true">http://localhost:4000//analytics/2017/01/10/python.html</guid>
         
         
-        <category>Design</category>
-        
-      </item>
-    
-      <item>
-        <title>Game</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
-
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 04 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/04/game.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/04/game.html</guid>
-        
-        
-        <category>Design</category>
-        
-      </item>
-    
-      <item>
-        <title>Safe</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
-
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 03 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/03/safe.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/03/safe.html</guid>
-        
-        
-        <category>Design</category>
-        
-      </item>
-    
-      <item>
-        <title>Submarine</title>
-        <description>&lt;p&gt;Use this area of the page to describe your project. The icon above is part of a free icon set by &lt;a href=&quot;https://sellfy.com/p/8Q9P/jV3VZ/&quot;&gt;Flat Icons&lt;/a&gt;. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!&lt;/p&gt;
-
-&lt;p&gt;In the Jekyll version of Freelancer, each portfolio item is a separate post that you can edit using markdown!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 02 Feb 2016 07:08:10 +1100</pubDate>
-        <link>http://localhost:4000//design/2016/02/02/submarine.html</link>
-        <guid isPermaLink="true">http://localhost:4000//design/2016/02/02/submarine.html</guid>
-        
-        
-        <category>Design</category>
+        <category>Analytics</category>
         
       </item>
     
