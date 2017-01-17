@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Interactive Resume"
+date:   2017-01-12
+img: img/ir.png
+modalID: modalResume
+category: Design
+---
+My very first perosnal project on this website. I've designed this [Interactive Resume][resume-link] using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun an interactive way. 
+
+You can also download a [PDF][pdf-link] version of my CV if you want.
+
+
+
+[resume-link]: /resume.html
+[pdf-link]: https://www.dropbox.com/s/k97skaq6hr07bbw/CV%20-%20Sharvil%20Popli.docx?dl=0
