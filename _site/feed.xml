@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sharvil</title>
+    <description>Database Developer - Open-Source Enthusiast - Problem Solver
+</description>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 18 Jan 2017 03:47:38 +1100</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 03:47:38 +1100</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Interactive Resume</title>
+        <description>&lt;p&gt;My very first perosnal project on this website. I’ve designed this &lt;a href=&quot;/resume.html&quot;&gt;Interactive Resume&lt;/a&gt; using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun an interactive way.&lt;/p&gt;
+
+&lt;p&gt;You can also download a &lt;a href=&quot;https://www.dropbox.com/s/k97skaq6hr07bbw/CV%20-%20Sharvil%20Popli.docx?dl=0&quot;&gt;PDF&lt;/a&gt; version of my CV if you want.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//design/2017/01/12/resume.html</link>
+        <guid isPermaLink="true">http://localhost:4000//design/2017/01/12/resume.html</guid>
+        
+        
+        <category>Design</category>
+        
+      </item>
+    
+      <item>
+        <title>Upcoming R Project</title>
+        <description>&lt;p&gt;Currently pursuing MOOCs to obtain R programming skills.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//analytics/2017/01/11/rprogram.html</link>
+        <guid isPermaLink="true">http://localhost:4000//analytics/2017/01/11/rprogram.html</guid>
+        
+        
+        <category>Analytics</category>
+        
+      </item>
+    
+      <item>
+        <title>Upcoming Python Project</title>
+        <description>&lt;p&gt;Currently pursuing MOOCs to obtain Python programming skills.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000//analytics/2017/01/10/python.html</link>
+        <guid isPermaLink="true">http://localhost:4000//analytics/2017/01/10/python.html</guid>
+        
+        
+        <category>Analytics</category>
+        
+      </item>
+    
+  </channel>
+</rss>

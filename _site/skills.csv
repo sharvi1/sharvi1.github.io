@@ -1,0 +1,24 @@
+id,name,value,stream,description,source,image_path
+tsql,T-SQL,200,database,,,images/Tsql-icon.png
+ssms,SSMS,200,database,,,images/sql-server-express1.png
+ssis,SSIS,250,database,,,images/ssis.png
+etl,ETL,250,database,,,images/
+c,C#,100,programming,,,images/
+asp,.NET,100,programming,,,images/
+mvc,MVC,50,web-dev,,,images/
+rest,HTTP/REST Services,150,web-dev,,,images/
+html,HTML5,300,web-dev,,,images/
+css,CSS3,250,web-dev,,,images/
+boot,Bootstrap,70,web-dev,,,images/
+java,JavaScript,150,web-dev,,,images/
+jq,Jquery,200,web-dev,,,images/
+ajs,AngularJS,200,web-dev,,,images/
+congnos,Cognos BI,50,analytics,,,images/
+tableau,Tableau,100,analytics,,,images/
+power,Power BI,300,analytics,,,images/
+excel,MS Excel/DAX,200,analytics,,,images/
+visio,MS Visio,250,analysis,,,images/
+powerpoint,MS PowerPoint,250,analysis,,,images/
+draw,Draw.io,300,analysis,,,images/
+git,Git,100,web-dev,,,images/
+d3,D3.JS,150,analytics,,,images/
