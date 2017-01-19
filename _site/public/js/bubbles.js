@@ -6,7 +6,7 @@
 	height = 1000;
 
 
-//2) pull out div based on id; add svg to it; give it height and width; 
+//2) pull out div based on id; add svg to it; give it height and width;
 //put g inside and transform to stay exatly where it was
 
 
@@ -19,7 +19,7 @@
 /*14.5) can use "translate (" + width / 2 + "," + height / 2 + ")")
 instead and keep as ----> d3.forceX()
 */
-	.attr("transform", "translate(0,0)") 
+	.attr("transform", "translate(0,0)")
 
 /*12) Now we try to put values of data to get circles in different sizes
 
@@ -58,7 +58,7 @@ defs.append("pattern")
 //forces to them in order to push them to a certain position
 //8.5) VIV: Simulation is a colliection of forces
 //about where we want our circles to go
-//and how we want our circles to interact 
+//and how we want our circles to interact
 
 //22) since adding functions within forceX becomes complicated and cluttery
 //we create a variable
@@ -84,7 +84,7 @@ defs.append("pattern")
 		else {
 			return 800
 		}
-	}).strength(0.05) 
+	}).strength(0.05)
 
 	var forceXSeparate = d3.forceX(function(d){
 //24) adding conditional split
@@ -130,7 +130,7 @@ var forceYCombine = d3.forceY(height / 2).strength(0.05)
 
 /*11) Step 1: Get them nodes to the middle
 Step 2:Don't have them collide
-Step3: As long as the radius of the circle matches the radius of the force 
+Step3: As long as the radius of the circle matches the radius of the force
 collide input, it won't overlap
 */
 
@@ -150,7 +150,7 @@ Hence as circle gets bigger the collision force also gets bigger
 
 
 
-//3) pull in sales to csv 
+//3) pull in sales to csv
 
 	d3.queue()
 	.defer(d3.csv, "skills.csv")
@@ -172,7 +172,7 @@ Hence as circle gets bigger the collision force also gets bigger
 
 
 
-//18) 
+//18)
 		defs.selectAll(".artist-pattern")
 		.data(datapoints)
 		.enter().append("pattern")
@@ -193,8 +193,8 @@ Hence as circle gets bigger the collision force also gets bigger
 			return d.image_path
 		});
 
-var div = d3.select("body").append("div")	
-    .attr("class", "tooltip")				
+var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
     .style("opacity", 0);
 
 //17.5) Added row entries to define number of circle as per rows in data, similarly
@@ -203,30 +203,30 @@ var div = d3.select("body").append("div")
 		.data(datapoints)
 
 		.enter().append("circle")
-		
+
 		.on('click', function(d){
 			console.log(d)
 
-			div.transition()		
-                .duration(200)		
-                .style("opacity", .9);		
-            div	.html("Skill: " + (d.name) + "<br/>"  + d.description)	
-                .style("left", (d3.event.pageX) + "px")		
-                .style("top", (d3.event.pageY - 28) + "px")	
+			div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div	.html("Skill: " + (d.name) + "<br/>"  + d.description)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px")
 
 
 		})
-		.on("mouseout", function(d) {		
-            div.transition()		
-                .duration(500)		
-                .style("opacity", 0);	
+		.on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
         })
 		.attr("class", "artist")
 //13) Instead of always making circle radius 10 ----->.attr("r", 10) we change to
 		.attr("r", function(d){
 			return radiusScale(d.value)
 		})
-//	17) now we put pattern id to this--> .attr("fill", "lightblue") 
+//	17) now we put pattern id to this--> .attr("fill", "lightblue")
 /*
 function(d){
 			return "url(#" + d.id+ ")"
@@ -237,7 +237,7 @@ function(d){
 		.attr("id","skill-details")
 		.attr("fill", "lightblue")
 //15) we can still use tooltips and transitions used in d3 visualizations
-		
+
 		.call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
@@ -251,20 +251,20 @@ function(d){
 
 //fix text on canvas with id and 0 opacity
 svg.append("text")
-	.attr("x", 150)             
+	.attr("x", 150)
 	.attr("y", 150)
-	.attr("id","databasetag")    
+	.attr("id","databasetag")
 	.attr("class", "legend")
-	.style("fill", "black")         
+	.style("fill", "black")
 	.text("Database");
-			
+
 var active   = databasetag.active ? false : true,
 newOpacity = active ? 0 : 1;
 d3.select("#databasetag").style("opacity", 0);
-		
 
-		
-			 
+
+
+
 /*
 
 4.5) Move all circles to the same place for example
@@ -288,9 +288,9 @@ d3.select("#decade").on('click', function(){
 		//var active   = databasetag.active ? false : true,
 		  //newOpacity = active ? 0 : 1;
 		// Hide or show the elements
-		
+
 		// Update whether or not the elements are active
-		
+
 			 d3.select("#databasetag").style("opacity", 1);
 
 })
@@ -306,18 +306,18 @@ d3.select("#combine").on('click', function(){
 //to explain how quickly it should be moving and restart simulation
 	.alphaTarget(0.10)
 	.restart()
-	
+
 		// Determine if current line is visible
 		//var active   = databasetag.active ? false : true,
 		  //newOpacity = active ? 0 : 1;
 		// Hide or show the elements
-		
+
 		// Update whether or not the elements are active
-		
+
 			 d3.select("#databasetag").style("opacity", 0);
-		 
-		 
-	
+
+
+
 
 })
 
@@ -340,7 +340,7 @@ d3.select("#combine").on('click', function(){
 //We need to define the code that fires on every tick of the clock vis a vis
 //on every tick of the simulation
 
-//Create function ticked; every time it is called it goes and grabs the circles 
+//Create function ticked; every time it is called it goes and grabs the circles
 //and we set their cx's and cy's: d.x is "data on x position"
 
 

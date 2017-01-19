@@ -2,7 +2,7 @@
 layout: post
 title:  "Upcoming R Project"
 date:   2017-01-11
-img: img/rp.jpg
+img: img/portfolio/rprogram.png
 modalID: modalRprogram
 category: Analytics
 ---
