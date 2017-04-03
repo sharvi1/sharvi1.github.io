@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="public/css/personal.css">
     <link rel="stylesheet" href="public/css/styledemo.css">
+    <link rel="stylesheet" href="public/css/timeline.css" rel="stylesheet" type="text/css">
+
 
     <link rel="canonical" href="http://localhost:4000//contact.html">
 
@@ -71,10 +73,10 @@
                     <a href="/">Home</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="projects.html">Projects</a>
+                    <a href="/blogs">Blog</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="resume.html">Resume</a>
+                    <a href="resumetimeline.html">Resume</a>
                 </li>
                 <li class="page-scroll">
                     <a href="contact.html">Contact</a>
@@ -86,46 +88,48 @@
     <!-- /.container-fluid -->
 </nav>
 
-
+<br><br><br>
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                   </br></br></br>
                     <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                    </br></br></br>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" action="https://formspree.io/sharvil.popli@gmail.com"
+      method="POST" id="contactForm" novalidate >
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input name="name" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input name="_replyto" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <input name="message" type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -133,7 +137,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button value="Send" type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
                     </form>
@@ -142,7 +146,7 @@
         </div>
     </section>
 
-
+<br><br>
     <!-- Footer -->
 <footer class="text-center">
     <div class="footer-above">
@@ -153,7 +157,7 @@
                     <p> Chadstone, VIC 3148</p>
                 </div>-->
                 <div class="footer-col col-md-4" style="width:100%;">
-                    <h3>Around the Web</h3>
+                    <!--<h3>Around the Web</h3>-->
                     <ul class="list-inline">
                         
                         <li>
@@ -226,13 +230,17 @@
 
 <script src="public/js/jquery.particleground.min.js" type="text/javascript"></script>
 <script src="public/js/jquery.particleground.js" type="text/javascript"></script>
-<script src="public/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<!--<script src="public/js/jquery-1.11.1.min.js" type="text/javascript"></script>-->
 <script src="public/js/demo.js" type="text/javascript"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 
 <script src="public/js/bubbles.js"></script>
-<script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<!--<script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>-->
+<script src="public/js/jquery.vticker.min.js" type="text/javascript"></script>
+
+
+
 
 
   </body>

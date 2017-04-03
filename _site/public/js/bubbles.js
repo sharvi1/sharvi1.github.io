@@ -14,12 +14,12 @@
 	.append("svg")
 	.attr("height",height)
 	.attr("width",width)
-	var g = svg.append("g")
+	/*var g = svg.append("g")*/
 
 /*14.5) can use "translate (" + width / 2 + "," + height / 2 + ")")
 instead and keep as ----> d3.forceX()
 */
-	.attr("transform", "translate(0,0)")
+	/*.attr("transform", "translate(0,0)")*/
 
 /*12) Now we try to put values of data to get circles in different sizes
 
@@ -197,23 +197,29 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-//17.5) Added row entries to define number of circle as per rows in data, similarly
-//we will selectall enter append 15 different patterns to our def		.artist is class
-		var circles = svg.selectAll(".artist")
+
+var elem = svg.selectAll(".artist")
 		.data(datapoints)
 
-		.enter().append("circle")
+		.enter()
 
-		.on('click', function(d){
+		.append("g")
+	    .attr("transform", function(d){return "translate(0,0)"})
+
+//17.5) Added row entries to define number of circle as per rows in data, similarly
+//we will selectall enter append 15 different patterns to our def		.artist is class
+		var circles = elem.append("circle")
+
+		.on('mouseover', function(d){
 			console.log(d)
 
 			div.transition()
                 .duration(200)
                 .style("opacity", .9);
             div	.html("Skill: " + (d.name) + "<br/>"  + d.description)
-                .style("left", (d3.event.pageX) + "px")
+                .style("left", (d3.event.pageX + 500) + "px")
                 .style("top", (d3.event.pageY - 28) + "px")
-
+                
 
 		})
 		.on("mouseout", function(d) {
@@ -235,7 +241,9 @@ function(d){
 
 //ADDING ID FOR REFERENCE TO DIALOGBOX JS
 		.attr("id","skill-details")
-		.attr("fill", "lightblue")
+		.attr("fill", function(d){
+			return "url(#" + d.id+ ")"
+		})
 //15) we can still use tooltips and transitions used in d3 visualizations
 
 		.call(d3.drag()
@@ -250,17 +258,105 @@ function(d){
       .text(function(d) { return "Skill: " + d.name; });
 
 //fix text on canvas with id and 0 opacity
+
+
+////////////////////////////////////////////////////*************NEED TO WORK ON TEXT FORCE*****************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+var label = svg.append("g").selectAll("text")
+
+.enter().append("text")
+				.attr("x", 8)
+                 .attr("y", ".31em")
+					
+					.text(function(d) { return "Skill: " + d.name; })
+					.attr("font-size", "20px")
+					.attr("fill", "red")
+					.call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+
+
+/*var label = circles.append("text");
+var labeldecor = label
+					.attr("x", function(d){return -20})
+					
+					.text(function(d) { return "Skill: " + d.name; })
+					.attr("font-size", "20px")
+					.attr("fill", "red");*/
+
 svg.append("text")
 	.attr("x", 150)
 	.attr("y", 150)
 	.attr("id","databasetag")
 	.attr("class", "legend")
 	.style("fill", "black")
-	.text("Database");
+	.text("Database 40%")
+	.attr("font-size", "20px");
 
 var active   = databasetag.active ? false : true,
 newOpacity = active ? 0 : 1;
 d3.select("#databasetag").style("opacity", 0);
+
+
+
+
+svg.append("text")
+	.attr("x", 650)
+	.attr("y", 250)
+	.attr("id","webdevtag")
+	.attr("class", "legend")
+	.style("fill", "black")
+	.text("Web Development 15%")
+	.attr("font-size", "20px");
+
+var active   = webdevtag.active ? false : true,
+newOpacity = active ? 0 : 1;
+d3.select("#webdevtag").style("opacity", 0);
+
+
+
+svg.append("text")
+	.attr("x", 1200)
+	.attr("y", 150)
+	.attr("id","programmingtag")
+	.attr("class", "legend")
+	.style("fill", "black")
+	.text("Programming 15%")
+	.attr("font-size", "20px");
+
+var active   = programmingtag.active ? false : true,
+newOpacity = active ? 0 : 1;
+d3.select("#programmingtag").style("opacity", 0);
+
+
+
+svg.append("text")
+	.attr("x", 150)
+	.attr("y", 850)
+	.attr("id","analyticstag")
+	.attr("class", "legend")
+	.style("fill", "black")
+	.text("Analytics 30%")
+	.attr("font-size", "20px");
+
+var active   = analyticstag.active ? false : true,
+newOpacity = active ? 0 : 1;
+d3.select("#analyticstag").style("opacity", 0);
+
+
+svg.append("text")
+	.attr("x", 1250)
+	.attr("y", 850)
+	.attr("id","ppttag")
+	.attr("class", "legend")
+	.style("fill", "black")
+	.text("Presentation")
+	.attr("font-size", "20px");
+
+var active   = ppttag.active ? false : true,
+newOpacity = active ? 0 : 1;
+d3.select("#ppttag").style("opacity", 0);
 
 
 
@@ -292,6 +388,11 @@ d3.select("#decade").on('click', function(){
 		// Update whether or not the elements are active
 
 			 d3.select("#databasetag").style("opacity", 1);
+			 d3.select("#webdevtag").style("opacity", 1);
+			 d3.select("#programmingtag").style("opacity", 1);
+			 d3.select("#analyticstag").style("opacity", 1);
+			 d3.select("#ppttag").style("opacity", 1);
+
 
 })
 
@@ -315,7 +416,10 @@ d3.select("#combine").on('click', function(){
 		// Update whether or not the elements are active
 
 			 d3.select("#databasetag").style("opacity", 0);
-
+			d3.select("#webdevtag").style("opacity", 0);
+			 d3.select("#programmingtag").style("opacity", 0);
+			 d3.select("#analyticstag").style("opacity", 0);
+			 d3.select("#ppttag").style("opacity", 0);
 
 
 

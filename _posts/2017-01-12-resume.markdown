@@ -6,7 +6,7 @@ img: img/portfolio/itrresume.png
 modalID: modalResume
 category: Design
 ---
-My very first perosnal project on this website. I've designed this [Interactive Resume][resume-link] using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun an interactive way.
+My very first perosnal project on this website. I've designed this [Interactive Resume][resume-link] using D3.JS library. The aim of this project is to give visitors a clear and concise view of my skillset in a fun and interactive way.
 
 You can also download a [PDF][pdf-link] version of my CV if you want.
 

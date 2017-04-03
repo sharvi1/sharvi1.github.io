@@ -1,24 +1,24 @@
 id,name,value,stream,description,source,image_path
-tsql,T-SQL,200,database,,,images/Tsql-icon.png
-ssms,SSMS,200,database,,,images/sql-server-express1.png
-ssis,SSIS,250,database,,,images/ssis.png
-etl,ETL,250,database,,,images/
-c,C#,100,programming,,,images/
-asp,.NET,100,programming,,,images/
-mvc,MVC,50,web-dev,,,images/
-rest,HTTP/REST Services,150,web-dev,,,images/
-html,HTML5,300,web-dev,,,images/
-css,CSS3,250,web-dev,,,images/
-boot,Bootstrap,70,web-dev,,,images/
-java,JavaScript,150,web-dev,,,images/
-jq,Jquery,200,web-dev,,,images/
-ajs,AngularJS,200,web-dev,,,images/
-congnos,Cognos BI,50,analytics,,,images/
-tableau,Tableau,100,analytics,,,images/
-power,Power BI,300,analytics,,,images/
-excel,MS Excel/DAX,200,analytics,,,images/
-visio,MS Visio,250,analysis,,,images/
-powerpoint,MS PowerPoint,250,analysis,,,images/
-draw,Draw.io,300,analysis,,,images/
-git,Git,100,web-dev,,,images/
-d3,D3.JS,150,analytics,,,images/
+tsql,T-SQL,200,database,,,img/tsql4.png
+ssms,SSMS,200,database,,,img/ssms5.png
+ssis,SSIS,250,database,,,img/ssis2.png
+etl,ETL,250,database,,,img/etl.png
+c,C#,100,programming,,,img/csharp.png
+asp,.NET,100,programming,,,img/dotnet.png
+mvc,MVC,50,web-dev,,,img/mvc.png
+rest,HTTP/REST Services,150,web-dev,,,img/rest.png
+html,HTML5,300,web-dev,,,img/html5.png
+css,CSS3,250,web-dev,,,img/css3.png
+boot,Bootstrap,70,web-dev,,,img/bootstrap.png
+java,JavaScript,150,web-dev,,,img/javascript.png
+jq,Jquery,200,web-dev,,,img/jquery.png
+ajs,AngularJS,200,web-dev,,,img/angularjs.png
+congnos,Cognos BI,50,analytics,,,img/cognos.png
+tableau,Tableau,100,analytics,,,img/tableau.png
+power,Power BI,300,analytics,,,img/power.png
+excel,MS Excel/DAX,200,analytics,,,img/excel.png
+visio,MS Visio,250,analysis,,,img/visio.png
+powerpoint,MS PowerPoint,250,analysis,,,img/ppt.png
+draw,Draw.io,300,analysis,,,img/drawio.png
+git,Git,100,web-dev,,,img/git.png
+d3,D3.JS,150,analytics,,,img/d3js.png
