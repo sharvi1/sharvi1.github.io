@@ -3,7 +3,7 @@
 
 //1) square
 	var width = 1400,
-	height = 1000;
+	height = 800;
 
 
 //2) pull out div based on id; add svg to it; give it height and width;
@@ -67,41 +67,42 @@ defs.append("pattern")
 
 
 
+
 	var forceYSeparate = d3.forceY(function(d){
 //24) adding conditional split
 		if(d.stream === 'database'){
-			return 200
+			return 300
 		}
 		if(d.stream === 'programming'){
-			return 200
+			return 300
 		}
 		if(d.stream === 'web-dev'){
 			return 500
 		}
 		if(d.stream === 'analytics'){
-			return 800
+			return 700
 		}
 		else {
-			return 800
+			return 700
 		}
 	}).strength(0.05)
 
 	var forceXSeparate = d3.forceX(function(d){
 //24) adding conditional split
 		if(d.stream === 'database'){
-			return 200
+			return -70
 		}
 		if(d.stream === 'programming'){
-			return 800
+			return 650
 		}
 		if(d.stream === 'web-dev'){
-			return 500
+			return 330
 		}
 		if(d.stream === 'analytics'){
-			return 200
+			return -70
 		}
 		else {
-			return 800
+			return 650
 		}
 	}).strength(0.05)
 
@@ -286,7 +287,7 @@ var labeldecor = label
 					.attr("fill", "red");*/
 
 svg.append("text")
-	.attr("x", 150)
+	.attr("x", 50)
 	.attr("y", 150)
 	.attr("id","databasetag")
 	.attr("class", "legend")
@@ -303,7 +304,7 @@ d3.select("#databasetag").style("opacity", 0);
 
 svg.append("text")
 	.attr("x", 650)
-	.attr("y", 250)
+	.attr("y", 130)
 	.attr("id","webdevtag")
 	.attr("class", "legend")
 	.style("fill", "black")
@@ -332,8 +333,8 @@ d3.select("#programmingtag").style("opacity", 0);
 
 
 svg.append("text")
-	.attr("x", 150)
-	.attr("y", 850)
+	.attr("x", 50)
+	.attr("y", 650)
 	.attr("id","analyticstag")
 	.attr("class", "legend")
 	.style("fill", "black")
@@ -347,7 +348,7 @@ d3.select("#analyticstag").style("opacity", 0);
 
 svg.append("text")
 	.attr("x", 1250)
-	.attr("y", 850)
+	.attr("y", 650)
 	.attr("id","ppttag")
 	.attr("class", "legend")
 	.style("fill", "black")

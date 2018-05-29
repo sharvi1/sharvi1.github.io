@@ -10,6 +10,11 @@
                 <div class="footer-col col-md-4" style="width:100%;">
                     <!--<h3>Around the Web</h3>-->
                     <ul class="list-inline">
+                        {% if site.youtube_url %}
+                        <li>
+                            <a href="{{ site.youtube_url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a>
+                        </li>
+                        {% endif %}
                         {% if site.linkedin_url %}
                         <li>
                             <a href="{{ site.linkedin_url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
