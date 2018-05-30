@@ -545,7 +545,8 @@ div.tooltip {
 
 .port-bg-color{
     background-color: #333;
-        background-image: -moz-linear-gradient(45deg, #666 25%, transparent 25%), 
+    background:linear-gradient(155deg, #fff -11px, transparent 1%) center, linear-gradient(#1a1f2f 200px, transparent 430%) center, #ccc;
+ /*       background-image: -moz-linear-gradient(45deg, #666 25%, transparent 25%), 
         -moz-linear-gradient(-45deg, #666 25%, transparent 25%), 
         -moz-linear-gradient(45deg, transparent 75%, #666 75%), 
         -moz-linear-gradient(-45deg, transparent 75%, #666 75%);
@@ -568,7 +569,7 @@ div.tooltip {
     -moz-background-size: 2px 2px;
     background-size: 2px 2px;
     -webkit-background-size: 2px 2.1px; /* override value for webkit */
-    background-position: 0 0, 1px 0, 1px -1px, 0px 1px;
+    /* background-position: 0 0, 1px 0, 1px -1px, 0px 1px; */
 }
 
 .text-port-color{
@@ -581,7 +582,9 @@ div.tooltip {
 }
 
 
-
+.listfontpsize{
+  font-size: 20px;
+}
 
 
 

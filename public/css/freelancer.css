@@ -7,7 +7,14 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   zoom: 80%;
+
 }
+
+body.home {
+  background:url("11510.jpg");
+  background-size: contain;       /* For flexibility */
+}
+
 p {
   font-size: 20px;
 }
