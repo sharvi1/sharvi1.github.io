@@ -75,6 +75,12 @@ body .navbar-brand{
 padding-left: 17px;
 }
 
+ul {
+  list-style-type: none;
+  text-align:center;
+}
+
+
 body.home {
 background-size: 0 0;
 }
@@ -101,6 +107,11 @@ body{zoom:100%;}
 body.home {
 background-size: 0 0;
 }
+
+/*ul {
+  list-style-type: none;
+}*/
+
 
 body  .img-personal {
     padding-right: unset;
@@ -584,8 +595,8 @@ div.tooltip {
 
 .listfontpsize{
   font-size: 20px;
+  
 }
-
 
 
 
@@ -660,7 +671,13 @@ div.tooltip {
     100% { opacity: 0; }
 
 
+}
 
+.centermodal {
+
+    top:20px;
+
+}
 
 
 
